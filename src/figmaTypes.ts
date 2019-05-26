@@ -390,7 +390,7 @@ export interface Rectangle extends VectorBase {
   /** Radius of each corner of the rectangle if a single radius is set for all corners */
   readonly cornerRadius?: number;
   /** Array of length 4 of the radius of each corner of the rectangle, starting in the top left and proceeding clockwise */
-  readonly rectangleCornerRadii?: ReadonlyArray<number>;
+  readonly rectangleCornerRadii?: [number, number, number, number];
 }
 
 /** A text box */
